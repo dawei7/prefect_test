@@ -9,7 +9,7 @@ from axpogeneral.blob_util import BlobUtil
 import io
 
 # General
-blob_service_client = BlobUtil("DefaultEndpointsProtocol=https;AccountName=tci4mm4lab4poc;AccountKey=PFAT0XWSDAFwcxzLJ7eVW+axTr7z2sv2oSbFyspnmlQ2gsBSeT7Hw6V3Tt9VS+1XYLG60r4AKY0j+AStw5oW5w==;EndpointSuffix=core.windows.net")
+blob_service_client = BlobUtil(SECRET)
 
 @flow(name="ENTSOE_Extract",log_prints=True)
 def extract(files:list):
